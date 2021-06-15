@@ -4,7 +4,7 @@ document.getElementById('restart').addEventListener('click', function(){
 
         var cookieName = (cookieArray[i].substr(0, cookieArray[i].indexOf('=')));
         document.cookie = cookieName + '= ; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT"';
-        document.location = '/'
+        document.location = 'https://mnlmrngl.github.io/ist-die-pille-schuld/disclaimer/'
     }
 });
 

@@ -8,7 +8,7 @@ checkbox.addEventListener('click', function () {
 start.addEventListener("click", function () {
     if (document.getElementById('checkboxDisclaimer').checked == true) {
         createCookie('disclaimerAccepted', 'true');
-        document.location = '/';
+        document.location = '../';
         document.querySelector('label').classList.remove('error')
     } else {
         document.querySelector('label').classList.add('error')
@@ -33,11 +33,11 @@ if (readCookie('disclaimerAccepted') == 'true') {
 
     continueBtn.addEventListener('click', function () {
         if (readCookie('currentQuestion') == 'result')
-            document.location = '/results';
+            document.location = '../results';
         else if (readCookie('currentQuestion') == 'resultFull')
-            document.location = '/results/full.html'
+            document.location = '../results/full.html'
         else
-            document.location = '/'
+            document.location = '../'
     });
 } else
     document.getElementById('restart').style.display = 'none'

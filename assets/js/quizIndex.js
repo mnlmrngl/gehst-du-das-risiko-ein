@@ -1,6 +1,6 @@
 //Check if disclaimer is accepted
 if (readCookie('disclaimerAccepted') != 'true') {
-    document.location = '/disclaimer';
+    document.location = 'disclaimer';
 }
 
 var activeQuestion;
@@ -14,7 +14,7 @@ if (readCookie('currentQuestion') == null) {
     activeQuestion = document.querySelector("[data-number='1']");
     activeQuestionNumber = activeQuestion.dataset.number;
 } else if (readCookie('currentQuestion') == 'result') {
-    document.location = '/results'
+    document.location = 'results'
 } else {
     //continue from disclaimer
     activeQuestionNumber = readCookie('currentQuestion');
@@ -103,7 +103,7 @@ else if (activeQuestionNumber == 13)
 //Cookies mit Lösungen setzen
 document.getElementById('getSolution').addEventListener('click', function () {
     setResultCookies();
-    document.location = '/results';
+    document.location = 'results';
 });
 
 //Go to Disclaimer
