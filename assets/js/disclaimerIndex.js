@@ -47,7 +47,7 @@ if (readCookie('disclaimerAccepted') == 'true') {
             var cookieName = (cookieArray[i].substr(0, cookieArray[i].indexOf('=')));
             document.cookie = cookieName + '= ; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT"';
         }
-        window.close();
+        document.location = 'https://www.hs-furtwangen.de/'
     });
 } else
     document.getElementById('restart').style.display = 'none'
