@@ -57,12 +57,23 @@ if (noGoes.length == 0) {
     type[1].innerHTML = 'eher'
     type[2].innerHTML = 'wahrscheinlich nicht'
 }
+if(noGoes.length > 0){
+    var noNoGoesText = document.querySelectorAll('.no-no-go-text');
+    console.log(noNoGoesText)
+    for (let i = 0; i < noNoGoesText.length; i++) {
+        noNoGoesText[i].style.display = 'none'
+    }
+    if(noGoes.length == 1){
+        document.querySelector('.countSideEffect').innerHTML = 'ist nur eine'
+    }
+}
 console.log(noGoes)
 if (noGoes.length == 0) {
-    document.getElementById('result-dynamic-p').innerHTML = 'Für dich sind keine der Nebenwirkungen ein wirkliches No-Go. Dennoch würde die Pille bei dir vermutlich auch zu Nebenwirkungen führen. Schau dir doch mal die Nebenwirkungen im Detail an und denke darüber nach, ob du möchtest, dass eine andere Person für dich diese Nebenwirkungen in Kauf nehmen soll.';
-    document.getElementById('last-p').style.display = 'none';
+    var noGoesText = document.querySelectorAll('.no-go-text');
+    for (let i = 0; i < noGoesText.length; i++) {
+        noGoesText[i].style.display = 'none'
+    }
 }
-
 
 //Show No Goes
 for (let i = 0; i < noGoes.length; i++) {

@@ -20,7 +20,6 @@ if (readCookie('currentQuestion') == null) {
     activeQuestionNumber = activeQuestion.dataset.number;
     for (let i = 0; i < inputSliders.length; i++) {
         inputSliders[i].value = Math.round(Math.random()*5);
-        // inputSliders[i].value = 1
     }
 } else if (readCookie('currentQuestion') == 'result') {
     document.location = 'results'
