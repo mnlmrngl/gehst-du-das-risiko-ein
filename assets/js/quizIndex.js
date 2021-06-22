@@ -3,16 +3,25 @@ if (readCookie('disclaimerAccepted') != 'true') {
     document.location = 'disclaimer';
 }
 
+
+
 var activeQuestion;
 var activeQuestionNumber;
 var backBtn;
 var nextBtn;
+var inputSliders = document.querySelectorAll("input[type='range']");
+
+
 
 //Check if user has paused quiz by reading disclaimer
 if (readCookie('currentQuestion') == null) {
     //new start
     activeQuestion = document.querySelector("[data-number='1']");
     activeQuestionNumber = activeQuestion.dataset.number;
+    for (let i = 0; i < inputSliders.length; i++) {
+        inputSliders[i].value = Math.round(Math.random()*5);
+        // inputSliders[i].value = 1
+    }
 } else if (readCookie('currentQuestion') == 'result') {
     document.location = 'results'
 } else {
@@ -38,7 +47,7 @@ if (readCookie('currentQuestion') == null) {
             solution.push(cookieElement.substring(start.length, cookieElement.length))
         }
     }
-    var inputSliders = document.querySelectorAll("input[type='range']");
+    // var inputSliders = document.querySelectorAll("input[type='range']");
     for (let i = 0; i < inputSliders.length; i++) {
         inputSliders[i].value = solution[i];
     }
@@ -103,7 +112,7 @@ else if (activeQuestionNumber == 13)
 //Cookies mit Lösungen setzen
 document.getElementById('getSolution').addEventListener('click', function () {
     setResultCookies();
-    document.location = 'results';
+    document.location = 'results/';
 });
 
 //Go to Disclaimer

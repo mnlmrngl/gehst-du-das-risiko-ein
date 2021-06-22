@@ -2,7 +2,7 @@ var points = readCookie('points');
 var risk = readCookie('percentage');
 
 document.getElementById('points').innerHTML = points;
-document.querySelector('.percentage').innerHTML = risk + '%';
+document.querySelector('.percentage').innerHTML = risk + ' %';
 
 var itemPointPlaceces = document.querySelectorAll('.highlight');
 
@@ -45,11 +45,4 @@ function getExplenation(risk) {
 document.getElementById('disclaimerBtn').addEventListener('click', function () {
     createCookie('currentQuestion', 'resultFull');
     document.location = '/disclaimer'
-});
-
-
-document.getElementById('downloadResult').addEventListener('click', function () {
-    const result = document.getElementById('resultToDownload');
-    console.log(result)
-    html2pdf().from(result).save();
 });
