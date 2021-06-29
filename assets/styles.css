@@ -222,6 +222,10 @@ footer li {
     left: -10%;
     max-width: 115%;
 }
+
+.options li{
+    cursor: pointer;
+}
 input[type=range]::-moz-range-thumb {
     width: 15px;
     height: 15px;
@@ -249,6 +253,10 @@ input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     position: relative;
     top: -5px;
+    visibility: hidden;
+}
+.thumb--visible{
+    visibility: visible;
 }
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
@@ -272,6 +280,55 @@ input[type=range]::-ms-track {
 input[type=range]::-ms-fill-lower {
     background: #699ae4;
 }
+.dummySpan{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+.dummyThumb{
+    border: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 0;
+    background: #699ae4;
+    margin-top: -20px;
+}
+.overlayOne{
+    height: 40px;
+    width: 15%;
+    /* background: red; */
+    position: relative;
+    margin-top: -40px;
+    cursor: pointer;
+}
+.overlayTwo{
+    height: 40px;
+    width: 27.5%;
+    /* background: blue; */
+    position: relative;
+    margin-top: -40px;
+    margin-left: 15%;
+    cursor: pointer;
+}
+.overlayThree{
+    height: 40px;
+    width: 33%;
+    /* background: yellow; */
+    position: relative;
+    margin-top: -40px;
+    margin-left: 42.5%;
+    cursor: pointer;
+}
+.overlayFour{
+    height: 40px;
+    width: 27.5%;
+    /* background: rgb(250, 255, 250); */
+    position: relative;
+    margin-top: -40px;
+    margin-left: 75.5%;
+    cursor: pointer;
+}
+
 
 #result {
     line-height: 1.6;
@@ -440,6 +497,9 @@ input[type=range]::-ms-fill-lower {
     #disclaimer main {
         width: 75%;
     }
+    .dummyThumb{
+        margin-top: -20px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -505,6 +565,9 @@ input[type=range]::-ms-fill-lower {
     .dark#disclaimer main {
         box-shadow: none;
         background-color: transparent;
+    }
+    .dummyThumb{
+         margin-top: -15px;
     }
 
     .circle {

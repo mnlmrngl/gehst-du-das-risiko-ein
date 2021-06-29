@@ -11,6 +11,8 @@
     <script src="assets/js/cookieControl.js"></script>
     <script src="assets/js/quizIndex.js" defer></script>
     <script src="assets/js/general.js" defer></script>
+
+    <style data="test" type="text/css"></style>
 </head>
 
 <body id="quiz" class="dark">
@@ -49,12 +51,21 @@
                     nämlich schon einmal Kopfschmerzen beschert.</p>
                 <p class="bold">Würdest du den Cocktail trinken?</p>
                 <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' list="options1" />
+                    <!-- <div class="question__answer"> -->
+                    <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                        data-slidernumber="1" />
+                    <span class="dummySpan">
+                        <span class="dummyThumb"></span>
+                    </span>
+                    <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                    <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                    <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                    <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
                     <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
+                        <li onclick="selectOne(this)">Nein</li>
+                        <li onclick="selectTwo(this)">Eher nicht</li>
+                        <li onclick="selectThree(this)">Vermutlich</li>
+                        <li onclick="selectFour(this)">Definitiv</li>
                     </ul>
                 </div>
             </div>
@@ -71,12 +82,21 @@
                 </p>
                 <p class="bold">Ignorierst du den Gedanken und suchst weiter Trost in Essen?</p>
                 <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
+                    <!-- <div class="question__answer"> -->
+                    <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                        data-slidernumber="2" />
+                    <span class="dummySpan">
+                        <span class="dummyThumb"></span>
+                    </span>
+                    <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                    <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                    <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                    <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
                     <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
+                        <li onclick="selectOne(this)">Nein</li>
+                        <li onclick="selectTwo(this)">Eher nicht</li>
+                        <li onclick="selectThree(this)">Vermutlich</li>
+                        <li onclick="selectFour(this)">Definitiv</li>
                     </ul>
                 </div>
             </div>
@@ -94,12 +114,21 @@
                 </p>
                 <p class="bold">Hältst du dich dennoch vom Buffet entfernt?</p>
                 <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
+                    <!-- <div class="question__answer"> -->
+                    <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                        data-slidernumber="3" />
+                    <span class="dummySpan">
+                        <span class="dummyThumb"></span>
+                    </span>
+                    <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                    <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                    <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                    <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
                     <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
+                        <li onclick="selectOne(this)">Nein</li>
+                        <li onclick="selectTwo(this)">Eher nicht</li>
+                        <li onclick="selectThree(this)">Vermutlich</li>
+                        <li onclick="selectFour(this)">Definitiv</li>
                     </ul>
                 </div>
             </div>
@@ -118,12 +147,21 @@
                 </p>
                 <p class="bold">Stempelst du diese Bitte nur als Panikmache ab?</p>
                 <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
+                    <!-- <div class="question__answer"> -->
+                    <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                        data-slidernumber="4" />
+                    <span class="dummySpan">
+                        <span class="dummyThumb"></span>
+                    </span>
+                    <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                    <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                    <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                    <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
                     <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
+                        <li onclick="selectOne(this)">Nein</li>
+                        <li onclick="selectTwo(this)">Eher nicht</li>
+                        <li onclick="selectThree(this)">Vermutlich</li>
+                        <li onclick="selectFour(this)">Definitiv</li>
                     </ul>
                 </div>
             </div>
@@ -143,12 +181,21 @@
                 </p>
                 <p class="bold">Ignorierst du die Probleme dennoch weiter?</p>
                 <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
+                    <!-- <div class="question__answer"> -->
+                    <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                        data-slidernumber="5" />
+                    <span class="dummySpan">
+                        <span class="dummyThumb"></span>
+                    </span>
+                    <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                    <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                    <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                    <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
                     <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
+                        <li onclick="selectOne(this)">Nein</li>
+                        <li onclick="selectTwo(this)">Eher nicht</li>
+                        <li onclick="selectThree(this)">Vermutlich</li>
+                        <li onclick="selectFour(this)">Definitiv</li>
                     </ul>
                 </div>
             </div>
@@ -165,12 +212,21 @@
                 </p>
                 <p class="bold">Legst du dich trotzdem neben sie/ihn?</p>
                 <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
+                    <!-- <div class="question__answer"> -->
+                    <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                        data-slidernumber="6" />
+                    <span class="dummySpan">
+                        <span class="dummyThumb"></span>
+                    </span>
+                    <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                    <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                    <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                    <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
                     <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
+                        <li onclick="selectOne(this)">Nein</li>
+                        <li onclick="selectTwo(this)">Eher nicht</li>
+                        <li onclick="selectThree(this)">Vermutlich</li>
+                        <li onclick="selectFour(this)">Definitiv</li>
                     </ul>
                 </div>
             </div>
@@ -188,12 +244,21 @@
                 </p>
                 <p class="bold">Hältst du an deinen Vorsätzen fest und trainierst auf maximaler Intensität?</p>
                 <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
+                    <!-- <div class="question__answer"> -->
+                    <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                        data-slidernumber="7" />
+                    <span class="dummySpan">
+                        <span class="dummyThumb"></span>
+                    </span>
+                    <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                    <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                    <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                    <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
                     <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
+                        <li onclick="selectOne(this)">Nein</li>
+                        <li onclick="selectTwo(this)">Eher nicht</li>
+                        <li onclick="selectThree(this)">Vermutlich</li>
+                        <li onclick="selectFour(this)">Definitiv</li>
                     </ul>
                 </div>
             </div>
@@ -212,15 +277,24 @@
                 </p>
                 <p class="bold">Gehst du das Risiko von einer erneuten Sehnenreizung ein, um ein paar Minuten Zeit zu
                     sparen?</p>
-                <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
-                    <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
-                    </ul>
-                </div>
+                    <div class="question__answer">
+                        <!-- <div class="question__answer"> -->
+                        <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                            data-slidernumber="8" />
+                        <span class="dummySpan">
+                            <span class="dummyThumb"></span>
+                        </span>
+                        <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                        <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                        <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                        <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
+                        <ul class="options">
+                            <li onclick="selectOne(this)">Nein</li>
+                            <li onclick="selectTwo(this)">Eher nicht</li>
+                            <li onclick="selectThree(this)">Vermutlich</li>
+                            <li onclick="selectFour(this)">Definitiv</li>
+                        </ul>
+                    </div>
             </div>
             <div class="question__image">
                 <img src="assets/img/sideeffect_08.svg" alt="Eine Person folgt einem Sporttutorial" />
@@ -235,12 +309,21 @@
                 </p>
                 <p class="bold">Isst du die Chips trotz des Rates deines Kumpels?</p>
                 <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
+                    <!-- <div class="question__answer"> -->
+                    <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                        data-slidernumber="9" />
+                    <span class="dummySpan">
+                        <span class="dummyThumb"></span>
+                    </span>
+                    <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                    <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                    <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                    <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
                     <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
+                        <li onclick="selectOne(this)">Nein</li>
+                        <li onclick="selectTwo(this)">Eher nicht</li>
+                        <li onclick="selectThree(this)">Vermutlich</li>
+                        <li onclick="selectFour(this)">Definitiv</li>
                     </ul>
                 </div>
             </div>
@@ -257,15 +340,24 @@
                 </p>
                 <p class="bold">Ist dir das egal - es gibt ja schließlich Augentropfen - und du drehst die Klimaanlage
                     voll auf? </p>
-                <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
-                    <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
-                    </ul>
-                </div>
+                    <div class="question__answer">
+                        <!-- <div class="question__answer"> -->
+                        <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                            data-slidernumber="10" />
+                        <span class="dummySpan">
+                            <span class="dummyThumb"></span>
+                        </span>
+                        <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                        <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                        <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                        <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
+                        <ul class="options">
+                            <li onclick="selectOne(this)">Nein</li>
+                            <li onclick="selectTwo(this)">Eher nicht</li>
+                            <li onclick="selectThree(this)">Vermutlich</li>
+                            <li onclick="selectFour(this)">Definitiv</li>
+                        </ul>
+                    </div>
             </div>
             <div class="question__image">
                 <img src="assets/img/sideeffect_10.svg" alt="Eine Person bietet einer anderen eine Packung Chips an" />
@@ -280,12 +372,21 @@
                 </p>
                 <p class="bold">Ist die schöne Wohnung es dir Wert, das Risiko einzugehen? </p>
                 <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
+                    <!-- <div class="question__answer"> -->
+                    <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                        data-slidernumber="11" />
+                    <span class="dummySpan">
+                        <span class="dummyThumb"></span>
+                    </span>
+                    <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                    <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                    <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                    <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
                     <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
+                        <li onclick="selectOne(this)">Nein</li>
+                        <li onclick="selectTwo(this)">Eher nicht</li>
+                        <li onclick="selectThree(this)">Vermutlich</li>
+                        <li onclick="selectFour(this)">Definitiv</li>
                     </ul>
                 </div>
             </div>
@@ -302,12 +403,21 @@
                 </p>
                 <p class="bold">Würdest du dich trotz des Risikos impfen lassen?</p>
                 <div class="question__answer">
-                    <input type='range' min='1' max='4' step='1' />
+                    <!-- <div class="question__answer"> -->
+                    <input type='range' min='1' max='4' step='1' list="options1" onclick="firstSliderClick(this)"
+                        data-slidernumber="12" />
+                    <span class="dummySpan">
+                        <span class="dummyThumb"></span>
+                    </span>
+                    <div class="overlayOne" onclick="firstSliderClick2(this)" data-overlaynumber="1"></div>
+                    <div class="overlayTwo" onclick="firstSliderClick2(this)" data-overlaynumber="2"></div>
+                    <div class="overlayThree" onclick="firstSliderClick2(this)" data-overlaynumber="3"></div>
+                    <div class="overlayFour" onclick="firstSliderClick2(this)" data-overlaynumber="4"></div>
                     <ul class="options">
-                        <li>Nein</li>
-                        <li>Eher nicht</li>
-                        <li>Vermutlich</li>
-                        <li>Definitiv</li>
+                        <li onclick="selectOne(this)">Nein</li>
+                        <li onclick="selectTwo(this)">Eher nicht</li>
+                        <li onclick="selectThree(this)">Vermutlich</li>
+                        <li onclick="selectFour(this)">Definitiv</li>
                     </ul>
                 </div>
             </div>
