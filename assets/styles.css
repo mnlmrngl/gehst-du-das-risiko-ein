@@ -232,6 +232,9 @@ input[type=range]::-moz-range-thumb {
     border: none;
     border-radius: 0;
     background-color: #699ae4;
+    position: relative;
+    top: -5px;
+    visibility: hidden;
 }
 input[type=range]::-moz-range-track {
     width: 100%;
@@ -293,6 +296,22 @@ input[type=range]::-ms-fill-lower {
     background: #699ae4;
     margin-top: -20px;
 }
+
+@-moz-document url-prefix() {
+    .dummySpan{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+    .dummyThumb{
+        border: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 0;
+        background: #699ae4;
+        margin-top: -32px;
+    }
+  }
 .overlayOne{
     height: 40px;
     width: 15%;
@@ -500,6 +519,22 @@ input[type=range]::-ms-fill-lower {
     .dummyThumb{
         margin-top: -20px;
     }
+
+    @-moz-document url-prefix() {
+        .dummySpan{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+        }
+        .dummyThumb{
+            border: none;
+            height: 15px;
+            width: 15px;
+            border-radius: 0;
+            background: #699ae4;
+            margin-top: -32px;
+        }
+      }
 }
 
 @media (max-width: 991px) {
@@ -524,6 +559,22 @@ input[type=range]::-ms-fill-lower {
     #quiz .question {
         flex-flow: column wrap;
     }
+
+    @-moz-document url-prefix() {
+        .dummySpan{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+        }
+        .dummyThumb{
+            border: none;
+            height: 15px;
+            width: 15px;
+            border-radius: 0;
+            background: #699ae4;
+            margin-top: -32px;
+        }
+      }
 }
 
 @media (max-width: 767px) {
@@ -583,6 +634,22 @@ input[type=range]::-ms-fill-lower {
     .no-go__item {
         width: calc(100% / 2);
     }
+
+    @-moz-document url-prefix() {
+        .dummySpan{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+        }
+        .dummyThumb{
+            border: none;
+            height: 15px;
+            width: 15px;
+            border-radius: 0;
+            background: #699ae4;
+            margin-top: -20px;
+        }
+      }
 }
 @media (max-width: 575px) {
     #quiz main {
@@ -609,6 +676,22 @@ input[type=range]::-ms-fill-lower {
     .sideeffect__desc {
         width: 100%;
     }
+
+    @-moz-document url-prefix() {
+        .dummySpan{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+        }
+        .dummyThumb{
+            border: none;
+            height: 15px;
+            width: 15px;
+            border-radius: 0;
+            background: #699ae4;
+            margin-top: -20px;
+        }
+      }
 }
 
 @media print {
